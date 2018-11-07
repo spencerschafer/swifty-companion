@@ -7,34 +7,25 @@
 //
 
 import UIKit
-
-struct campus: Decodable {
-    let country: String
-    let city: String
-    let students: String
-}
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
-
+    
+    let clientID = "58d6b29b6707b80ca3207127dfec6699d107a48f2a761b312d92c844c7ece155"
+    let clientSecret = "6a70b5a180a7b46f4fc78359e6827e843448f404b97d03d58d15960fdc392f41"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("Start")
         
-        let token = "Authorization: Bearer 8ea97ceb20e742bdc8a515d3ee7aed195ca724e5c31ba4ea5b9e966495cb379f"
-        let url = token + "https://api.intra.42.fr/v2/campus"
-        let urlObject = URL(string: url)
-        
-        URLSession.shared.dataTask(with: urlObject!) {(data, response, error) in
-            do {
-                var campuses = try JSONDecoder().decode([campus].self, from: data!)
-                
-                for campus in campuses {
-                    print(campus.country)
-                }
-            } catch {
-                print("ERROR")
+        Alamofire.request("https://api.intra.42.fr/v2/users/sschafer?access_token=46662c19e8a23e1c9b22b0ec131049858f7f30ee6d4cdeb1064a8631aee638d3").responseJSON { (response) -> Void in
+            print("Request")
+            if let JSON = response.result.value {
+                print(JSON)
             }
-        }.resume()
-        
+        }
+        print("End")
     }
 }
