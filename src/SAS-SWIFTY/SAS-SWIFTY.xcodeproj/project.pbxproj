@@ -14,6 +14,9 @@
 		587BE1B62191A8A10069BC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587BE1B42191A8A10069BC8A /* LaunchScreen.storyboard */; };
 		587BE1C12191A8A10069BC8A /* SAS_SWIFTYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587BE1C02191A8A10069BC8A /* SAS_SWIFTYTests.swift */; };
 		587BE1CC2191A8A10069BC8A /* SAS_SWIFTYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587BE1CB2191A8A10069BC8A /* SAS_SWIFTYUITests.swift */; };
+		5DF50B39C477BF87B3ED6F51 /* Pods_SAS_SWIFTYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3760A452D7D0820CC176725F /* Pods_SAS_SWIFTYTests.framework */; };
+		62E505F8635C2ADBDA5FFB02 /* Pods_SAS_SWIFTY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA98AF2B16CCC17430AE0BB /* Pods_SAS_SWIFTY.framework */; };
+		D238438BCF4080136B3468EA /* Pods_SAS_SWIFTYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866BCEC73390263416DF8ABE /* Pods_SAS_SWIFTYUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3760A452D7D0820CC176725F /* Pods_SAS_SWIFTYTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAS_SWIFTYTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		587BE1A82191A89C0069BC8A /* SAS-SWIFTY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAS-SWIFTY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		587BE1AB2191A89C0069BC8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		587BE1AD2191A89C0069BC8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		587BE1C72191A8A10069BC8A /* SAS-SWIFTYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SAS-SWIFTYUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		587BE1CB2191A8A10069BC8A /* SAS_SWIFTYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAS_SWIFTYUITests.swift; sourceTree = "<group>"; };
 		587BE1CD2191A8A10069BC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D5F7D8D573267AC78CC571 /* Pods-SAS-SWIFTYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAS-SWIFTYTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAS-SWIFTYTests/Pods-SAS-SWIFTYTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FED1C71F02C42CEE070286E /* Pods-SAS-SWIFTYUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAS-SWIFTYUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAS-SWIFTYUITests/Pods-SAS-SWIFTYUITests.release.xcconfig"; sourceTree = "<group>"; };
+		866BCEC73390263416DF8ABE /* Pods_SAS_SWIFTYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAS_SWIFTYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EFE7EFCA215951F84FA4B11 /* Pods-SAS-SWIFTY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAS-SWIFTY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAS-SWIFTY/Pods-SAS-SWIFTY.debug.xcconfig"; sourceTree = "<group>"; };
+		ACA98AF2B16CCC17430AE0BB /* Pods_SAS_SWIFTY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAS_SWIFTY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D0BDB83B6DE71BE30CE38A /* Pods-SAS-SWIFTYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAS-SWIFTYUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAS-SWIFTYUITests/Pods-SAS-SWIFTYUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBE8829FAD90B32A81A6E806 /* Pods-SAS-SWIFTY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAS-SWIFTY.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAS-SWIFTY/Pods-SAS-SWIFTY.release.xcconfig"; sourceTree = "<group>"; };
+		FB871B70B6033A4A364DB547 /* Pods-SAS-SWIFTYTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAS-SWIFTYTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAS-SWIFTYTests/Pods-SAS-SWIFTYTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E505F8635C2ADBDA5FFB02 /* Pods_SAS_SWIFTY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF50B39C477BF87B3ED6F51 /* Pods_SAS_SWIFTYTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D238438BCF4080136B3468EA /* Pods_SAS_SWIFTYUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				587BE1BF2191A8A10069BC8A /* SAS-SWIFTYTests */,
 				587BE1CA2191A8A10069BC8A /* SAS-SWIFTYUITests */,
 				587BE1A92191A89C0069BC8A /* Products */,
+				743389328E403E2B159432FF /* Pods */,
+				7CFC5CA55E6702C1968B1B33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = "SAS-SWIFTYUITests";
 			sourceTree = "<group>";
 		};
+		743389328E403E2B159432FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EFE7EFCA215951F84FA4B11 /* Pods-SAS-SWIFTY.debug.xcconfig */,
+				CBE8829FAD90B32A81A6E806 /* Pods-SAS-SWIFTY.release.xcconfig */,
+				FB871B70B6033A4A364DB547 /* Pods-SAS-SWIFTYTests.debug.xcconfig */,
+				66D5F7D8D573267AC78CC571 /* Pods-SAS-SWIFTYTests.release.xcconfig */,
+				B1D0BDB83B6DE71BE30CE38A /* Pods-SAS-SWIFTYUITests.debug.xcconfig */,
+				6FED1C71F02C42CEE070286E /* Pods-SAS-SWIFTYUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7CFC5CA55E6702C1968B1B33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA98AF2B16CCC17430AE0BB /* Pods_SAS_SWIFTY.framework */,
+				3760A452D7D0820CC176725F /* Pods_SAS_SWIFTYTests.framework */,
+				866BCEC73390263416DF8ABE /* Pods_SAS_SWIFTYUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587BE1D02191A8A10069BC8A /* Build configuration list for PBXNativeTarget "SAS-SWIFTY" */;
 			buildPhases = (
+				C7CF1F2DBE72514429E1FFB9 /* [CP] Check Pods Manifest.lock */,
 				587BE1A42191A89C0069BC8A /* Sources */,
 				587BE1A52191A89C0069BC8A /* Frameworks */,
 				587BE1A62191A89C0069BC8A /* Resources */,
+				5ED29E6CA674C71288B1B9E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587BE1D32191A8A10069BC8A /* Build configuration list for PBXNativeTarget "SAS-SWIFTYTests" */;
 			buildPhases = (
+				48DB3063D65AC4DBA5EC5D51 /* [CP] Check Pods Manifest.lock */,
 				587BE1B82191A8A10069BC8A /* Sources */,
 				587BE1B92191A8A10069BC8A /* Frameworks */,
 				587BE1BA2191A8A10069BC8A /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587BE1D62191A8A10069BC8A /* Build configuration list for PBXNativeTarget "SAS-SWIFTYUITests" */;
 			buildPhases = (
+				DFA4B9526AA0D4F465AE3E79 /* [CP] Check Pods Manifest.lock */,
 				587BE1C32191A8A10069BC8A /* Sources */,
 				587BE1C42191A8A10069BC8A /* Frameworks */,
 				587BE1C52191A8A10069BC8A /* Resources */,
@@ -250,6 +294,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48DB3063D65AC4DBA5EC5D51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAS-SWIFTYTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ED29E6CA674C71288B1B9E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SAS-SWIFTY/Pods-SAS-SWIFTY-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAS-SWIFTY/Pods-SAS-SWIFTY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7CF1F2DBE72514429E1FFB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAS-SWIFTY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFA4B9526AA0D4F465AE3E79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAS-SWIFTYUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		587BE1A42191A89C0069BC8A /* Sources */ = {
@@ -430,6 +567,7 @@
 		};
 		587BE1D12191A8A10069BC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EFE7EFCA215951F84FA4B11 /* Pods-SAS-SWIFTY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +585,7 @@
 		};
 		587BE1D22191A8A10069BC8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE8829FAD90B32A81A6E806 /* Pods-SAS-SWIFTY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +603,7 @@
 		};
 		587BE1D42191A8A10069BC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB871B70B6033A4A364DB547 /* Pods-SAS-SWIFTYTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +624,7 @@
 		};
 		587BE1D52191A8A10069BC8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D5F7D8D573267AC78CC571 /* Pods-SAS-SWIFTYTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +645,7 @@
 		};
 		587BE1D72191A8A10069BC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D0BDB83B6DE71BE30CE38A /* Pods-SAS-SWIFTYUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +665,7 @@
 		};
 		587BE1D82191A8A10069BC8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FED1C71F02C42CEE070286E /* Pods-SAS-SWIFTYUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

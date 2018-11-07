@@ -1,0 +1,6 @@
+framework module Pods_SAS_SWIFTYTests {
+  umbrella header "Pods-SAS-SWIFTYTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
