@@ -29,8 +29,13 @@
                                 <state key="normal" title="Go">
                                     <color key="titleColor" red="0.1803921568627451" green="0.21176470588235294" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="D7X-0Z-ke1" kind="show" id="Otg-CE-J8y"/>
+                                    <action selector="goButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftW-g3-S66"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDR-f2-uzU">
@@ -39,14 +44,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-0j-SSH">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-0j-SSH">
                                 <rect key="frame" x="82" y="233" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="iEn-Ps-gBi"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFq-V0-XlL">
                                 <rect key="frame" x="82" y="213" width="250" height="3"/>
@@ -79,15 +84,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0tN-30-zW0"/>
+                    <connections>
+                        <outlet property="goButton" destination="m1V-m5-gcj" id="fhR-pS-Vxc"/>
+                        <outlet property="searchField" destination="Oip-0j-SSH" id="fzh-po-8iK"/>
+                        <segue destination="D7X-0Z-ke1" kind="show" identifier="buttonSegue" id="Xy5-LT-vhg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="860.49107142857144" y="-565.21739130434787"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="4fY-WL-C5M">
             <objects>
-                <viewController id="D7X-0Z-ke1" sceneMemberID="viewController">
+                <viewController id="D7X-0Z-ke1" customClass="ViewController2" customModule="Swifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eCv-7y-0oH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,16 +125,28 @@
                                                     <constraint firstAttribute="height" constant="3" id="hPJ-ky-5vx"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL2-2E-jDm">
+                                                <rect key="frame" x="107" y="190" width="200" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Aor-hO-el4"/>
+                                                    <constraint firstAttribute="height" constant="80" id="j2t-ZH-yFl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="y6R-0g-GEs" firstAttribute="top" secondItem="8x6-31-7iQ" secondAttribute="bottom" constant="-117" id="0uP-Ay-Zav"/>
                                             <constraint firstAttribute="bottom" secondItem="y6R-0g-GEs" secondAttribute="bottom" id="1MX-0G-JYg"/>
+                                            <constraint firstItem="cL2-2E-jDm" firstAttribute="centerX" secondItem="HcY-iH-atb" secondAttribute="centerX" id="B1x-j2-RLM"/>
                                             <constraint firstAttribute="height" constant="1500" id="MYC-pB-wNT"/>
                                             <constraint firstItem="y6R-0g-GEs" firstAttribute="leading" secondItem="HcY-iH-atb" secondAttribute="leading" id="RCJ-yf-9Sq"/>
                                             <constraint firstItem="2hY-S6-G2j" firstAttribute="top" secondItem="8x6-31-7iQ" secondAttribute="bottom" constant="8" id="SW1-e2-Ac2"/>
                                             <constraint firstItem="y6R-0g-GEs" firstAttribute="centerX" secondItem="HcY-iH-atb" secondAttribute="centerX" id="Si5-2l-3KD"/>
                                             <constraint firstItem="y6R-0g-GEs" firstAttribute="top" secondItem="HcY-iH-atb" secondAttribute="top" id="X8I-5a-L2s"/>
+                                            <constraint firstItem="cL2-2E-jDm" firstAttribute="top" secondItem="8x6-31-7iQ" secondAttribute="bottom" constant="73" id="aNa-Qe-2Tk"/>
                                             <constraint firstAttribute="trailing" secondItem="y6R-0g-GEs" secondAttribute="trailing" id="jAO-nr-Iii"/>
                                             <constraint firstItem="8x6-31-7iQ" firstAttribute="centerX" secondItem="HcY-iH-atb" secondAttribute="centerX" id="jdF-HN-GLB"/>
                                             <constraint firstItem="2hY-S6-G2j" firstAttribute="centerX" secondItem="HcY-iH-atb" secondAttribute="centerX" id="oaT-IR-xnl"/>
@@ -150,10 +172,13 @@
                         <viewLayoutGuide key="safeArea" id="S5n-c7-V5w"/>
                     </view>
                     <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="usernameLabel" destination="cL2-2E-jDm" id="qeT-Qb-njw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRt-fG-bLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1633" y="-363"/>
+            <point key="canvasLocation" x="1631.8840579710147" y="-363.61607142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ms6-q1-RjC">

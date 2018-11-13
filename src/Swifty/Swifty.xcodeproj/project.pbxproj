@@ -14,6 +14,7 @@
 		5848FD3721970DEE008776D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5848FD3521970DEE008776D6 /* LaunchScreen.storyboard */; };
 		5848FD4221970DEE008776D6 /* SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848FD4121970DEE008776D6 /* SwiftyTests.swift */; };
 		5848FD4D21970DEE008776D6 /* SwiftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848FD4C21970DEE008776D6 /* SwiftyUITests.swift */; };
+		58C70912219B165D002133BD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C70911219B165D002133BD /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5848FD4821970DEE008776D6 /* SwiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5848FD4C21970DEE008776D6 /* SwiftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUITests.swift; sourceTree = "<group>"; };
 		5848FD4E21970DEE008776D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58C70911219B165D002133BD /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				5848FD2C21970DEB008776D6 /* AppDelegate.swift */,
 				5848FD2E21970DEB008776D6 /* ViewController.swift */,
+				58C70911219B165D002133BD /* ViewController2.swift */,
 				5848FD3021970DEB008776D6 /* Main.storyboard */,
 				5848FD3321970DEE008776D6 /* Assets.xcassets */,
 				5848FD3521970DEE008776D6 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C70912219B165D002133BD /* ViewController2.swift in Sources */,
 				5848FD2F21970DEB008776D6 /* ViewController.swift in Sources */,
 				5848FD2D21970DEB008776D6 /* AppDelegate.swift in Sources */,
 			);
