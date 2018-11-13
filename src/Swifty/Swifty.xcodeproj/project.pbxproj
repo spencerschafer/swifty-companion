@@ -14,7 +14,6 @@
 		5848FD3721970DEE008776D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5848FD3521970DEE008776D6 /* LaunchScreen.storyboard */; };
 		5848FD4221970DEE008776D6 /* SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848FD4121970DEE008776D6 /* SwiftyTests.swift */; };
 		5848FD4D21970DEE008776D6 /* SwiftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848FD4C21970DEE008776D6 /* SwiftyUITests.swift */; };
-		5848FD5B219711C3008776D6 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5848FD5A219711C3008776D6 /* background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		5848FD4821970DEE008776D6 /* SwiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5848FD4C21970DEE008776D6 /* SwiftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUITests.swift; sourceTree = "<group>"; };
 		5848FD4E21970DEE008776D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5848FD5A219711C3008776D6 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../../.files/swifty_companion/resources/assets/background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 				5848FD2C21970DEB008776D6 /* AppDelegate.swift */,
 				5848FD2E21970DEB008776D6 /* ViewController.swift */,
 				5848FD3021970DEB008776D6 /* Main.storyboard */,
-				5848FD5A219711C3008776D6 /* background.jpg */,
 				5848FD3321970DEE008776D6 /* Assets.xcassets */,
 				5848FD3521970DEE008776D6 /* LaunchScreen.storyboard */,
 				5848FD3821970DEE008776D6 /* Info.plist */,
@@ -233,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5848FD3721970DEE008776D6 /* LaunchScreen.storyboard in Resources */,
-				5848FD5B219711C3008776D6 /* background.jpg in Resources */,
 				5848FD3421970DEE008776D6 /* Assets.xcassets in Resources */,
 				5848FD3221970DEB008776D6 /* Main.storyboard in Resources */,
 			);
