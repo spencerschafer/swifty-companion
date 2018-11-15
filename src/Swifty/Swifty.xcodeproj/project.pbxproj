@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5848FD2D21970DEB008776D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848FD2C21970DEB008776D6 /* AppDelegate.swift */; };
-		5848FD2F21970DEB008776D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848FD2E21970DEB008776D6 /* ViewController.swift */; };
+		5848FD2F21970DEB008776D6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848FD2E21970DEB008776D6 /* SearchViewController.swift */; };
 		5848FD3221970DEB008776D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5848FD3021970DEB008776D6 /* Main.storyboard */; };
 		5848FD3421970DEE008776D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5848FD3321970DEE008776D6 /* Assets.xcassets */; };
 		5848FD3721970DEE008776D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5848FD3521970DEE008776D6 /* LaunchScreen.storyboard */; };
 		5848FD4221970DEE008776D6 /* SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848FD4121970DEE008776D6 /* SwiftyTests.swift */; };
 		5848FD4D21970DEE008776D6 /* SwiftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5848FD4C21970DEE008776D6 /* SwiftyUITests.swift */; };
-		58C70912219B165D002133BD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C70911219B165D002133BD /* ViewController2.swift */; };
+		58632F20219C306F0075DBB2 /* Authenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58632F1F219C306F0075DBB2 /* Authenticate.swift */; };
+		58C70912219B165D002133BD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C70911219B165D002133BD /* ProfileViewController.swift */; };
+		CCD50EDAEC13C888C26EB7B0 /* Pods_Swifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D71897F81E48EC45099FCC /* Pods_Swifty.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28D71897F81E48EC45099FCC /* Pods_Swifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5848FD2921970DEB008776D6 /* Swifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5848FD2C21970DEB008776D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5848FD2E21970DEB008776D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5848FD2E21970DEB008776D6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5848FD3121970DEB008776D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5848FD3321970DEE008776D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5848FD3621970DEE008776D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +51,10 @@
 		5848FD4821970DEE008776D6 /* SwiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5848FD4C21970DEE008776D6 /* SwiftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUITests.swift; sourceTree = "<group>"; };
 		5848FD4E21970DEE008776D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58C70911219B165D002133BD /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		58632F1F219C306F0075DBB2 /* Authenticate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticate.swift; sourceTree = "<group>"; };
+		58C70911219B165D002133BD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AC741F4B7A2E86E7E27CC76D /* Pods-Swifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty/Pods-Swifty.debug.xcconfig"; sourceTree = "<group>"; };
+		C668C05B915D7547AB47A2AD /* Pods-Swifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty/Pods-Swifty.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD50EDAEC13C888C26EB7B0 /* Pods_Swifty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E298E32D45779F364A8C50F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC741F4B7A2E86E7E27CC76D /* Pods-Swifty.debug.xcconfig */,
+				C668C05B915D7547AB47A2AD /* Pods-Swifty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5848FD2021970DEB008776D6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +99,8 @@
 				5848FD4021970DEE008776D6 /* SwiftyTests */,
 				5848FD4B21970DEE008776D6 /* SwiftyUITests */,
 				5848FD2A21970DEB008776D6 /* Products */,
+				4E298E32D45779F364A8C50F /* Pods */,
+				F8E71D8B3703340202B87D34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				5848FD2C21970DEB008776D6 /* AppDelegate.swift */,
-				5848FD2E21970DEB008776D6 /* ViewController.swift */,
-				58C70911219B165D002133BD /* ViewController2.swift */,
+				58632F1F219C306F0075DBB2 /* Authenticate.swift */,
+				58C70911219B165D002133BD /* ProfileViewController.swift */,
+				5848FD2E21970DEB008776D6 /* SearchViewController.swift */,
 				5848FD3021970DEB008776D6 /* Main.storyboard */,
 				5848FD3321970DEE008776D6 /* Assets.xcassets */,
 				5848FD3521970DEE008776D6 /* LaunchScreen.storyboard */,
@@ -128,6 +147,14 @@
 			path = SwiftyUITests;
 			sourceTree = "<group>";
 		};
+		F8E71D8B3703340202B87D34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28D71897F81E48EC45099FCC /* Pods_Swifty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5848FD5121970DEE008776D6 /* Build configuration list for PBXNativeTarget "Swifty" */;
 			buildPhases = (
+				C7E6CF9B8778386C2F70F67D /* [CP] Check Pods Manifest.lock */,
 				5848FD2521970DEB008776D6 /* Sources */,
 				5848FD2621970DEB008776D6 /* Frameworks */,
 				5848FD2721970DEB008776D6 /* Resources */,
+				1E3EB399C9973E8BC21A900B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,13 +283,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E3EB399C9973E8BC21A900B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swifty/Pods-Swifty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swifty/Pods-Swifty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7E6CF9B8778386C2F70F67D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swifty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5848FD2521970DEB008776D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58C70912219B165D002133BD /* ViewController2.swift in Sources */,
-				5848FD2F21970DEB008776D6 /* ViewController.swift in Sources */,
+				58632F20219C306F0075DBB2 /* Authenticate.swift in Sources */,
+				58C70912219B165D002133BD /* ProfileViewController.swift in Sources */,
+				5848FD2F21970DEB008776D6 /* SearchViewController.swift in Sources */,
 				5848FD2D21970DEB008776D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +513,7 @@
 		};
 		5848FD5221970DEE008776D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC741F4B7A2E86E7E27CC76D /* Pods-Swifty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +531,7 @@
 		};
 		5848FD5321970DEE008776D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C668C05B915D7547AB47A2AD /* Pods-Swifty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
