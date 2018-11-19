@@ -13,11 +13,13 @@ import SwiftyJSON
 
 class ProfileViewController: UIViewController {
     
-    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var displayNameLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
     
     
     var userInformation: JSON?
@@ -30,8 +32,7 @@ class ProfileViewController: UIViewController {
         print("Function 6.1")
         getProfileAttributes()
         print("Function 6.2")
-        print("getProfileImage() called.")
-        //getProfileImage()
+        getProfileImage()
         print("Function 6.end")
     }
     
@@ -40,14 +41,23 @@ class ProfileViewController: UIViewController {
         let image = NSData(contentsOf: NSURL(string:imageURL)! as URL)
         
         profileImage.image = UIImage(data:image! as Data)
-        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+        profileImage.layer.cornerRadius = 10
         profileImage.clipsToBounds = true
     }
     
     func getProfileAttributes() {
-        usernameLabel.text = userInformation!["login"].stringValue
         displayNameLabel.text = userInformation!["displayname"].stringValue
+        
+        usernameLabel.text = userInformation!["login"].stringValue
+        
         levelLabel.text = userInformation!["cursus_users"][0]["level"].stringValue
-        locationLabel.text = userInformation!["campus"][0]["city"].stringValue
+        //TODO: truncate string as some users level value contains x.xxxxxxx
+        //print(userInformation!["cursus_users"][0]["level"].stringValue)
+        levelLabel.layer.cornerRadius = 10
+        levelLabel.layer.masksToBounds = true
+        
+        locationLabel.text = userInformation!["campus"][0]["city"].stringValue + ", " + userInformation!["campus"][0]["country"].stringValue
+        
+        emailLabel.text = userInformation!["email"].stringValue
     }
 }
