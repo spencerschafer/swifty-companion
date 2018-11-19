@@ -26,6 +26,7 @@ class Authenticate {
         print("Function 2")
         Alamofire.request(url, method: .post, parameters: credentials).responseJSON { (response) in
             if (response.result.isSuccess) {
+                print("Function 2.2")
                 let value = response.result.value
                 let json = JSON(value!)
                 
@@ -38,6 +39,7 @@ class Authenticate {
                     exit(0)
                 }
                 else {
+                    print("Function 2.3")
                     self.token = json["access_token"].stringValue
                 }
             }
@@ -48,24 +50,25 @@ class Authenticate {
                 exit(0)
             }
         }
-        print("Function 2: done")
+        print("Function 2.end")
     }
 
     func requestUser (username:String, completion: @escaping (JSON?) -> Void) {
         print("Function 4")
         let request = "https://api.intra.42.fr/v2/users/" + username + "?access_token=" + self.token
         //print(request)
-        
+        print("Function 4.1")
         Alamofire.request(request)
             .responseJSON { response in
                 guard response.result.isSuccess else {
                     print("Error-@@")
                     return
                 }
-                
+                print("Function 4.2")
                 let value = response.result.value
                 let json = JSON(value!)
                 completion(json)
+                print("Function 4.end")
         }
     }
 }

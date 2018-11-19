@@ -21,17 +21,22 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         print("Function 1")
         authenticate.requestToken()
+        print("Function 1.end")
     }
     
     @IBAction func goButton(_ sender: Any) {
         print("Function 3")
         if searchField.text != "" {
+            print("Function 3.1")
             authenticate.requestUser(username: searchField.text!.trimmingCharacters(in: .whitespacesAndNewlines)) {
                 completion in
+                print("Function 3.2")
                 if completion != nil {
                     print("Function 5")
                     json = completion
+                    print("Function 5.1")
                     self.performSegue(withIdentifier: "goButtonSegue", sender: self)
+                    print("Function 5.end")
                 } else {
                     print("Error in goButton")
                 }
