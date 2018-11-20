@@ -19,6 +19,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var skillsTableView: UITableView!
+    @IBOutlet weak var projectsTableView: UITableView!
     
     
     
@@ -33,6 +35,8 @@ class ProfileViewController: UIViewController {
         getProfileAttributes()
         print("Function 6.2")
         getProfileImage()
+        getSkills()
+        getProjects()
         print("Function 6.end")
     }
     
@@ -59,5 +63,13 @@ class ProfileViewController: UIViewController {
         locationLabel.text = userInformation!["campus"][0]["city"].stringValue + ", " + userInformation!["campus"][0]["country"].stringValue
         
         emailLabel.text = userInformation!["email"].stringValue
+    }
+    
+    func getSkills() {
+        skillsTableView.layer.cornerRadius = 10
+    }
+    
+    func getProjects() {
+        projectsTableView.layer.cornerRadius = 10
     }
 }
