@@ -11,8 +11,8 @@ import SwiftyJSON
 
 
 
-class ProfileViewController: UIViewController {
-    
+class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var displayNameLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
@@ -22,9 +22,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var skillsTableView: UITableView!
     @IBOutlet weak var projectsTableView: UITableView!
     
-    
-    
     var userInformation: JSON?
+    var skillsInformation: [String] = ["1", "2", "3", "4", "5", "6", "7"]
+    var projectsInformation: [String] = ["A", "B", "C", "D", "E", "F", "G"]
     
     override func viewDidLoad() {
         print("Function 6")
@@ -35,8 +35,7 @@ class ProfileViewController: UIViewController {
         getProfileAttributes()
         print("Function 6.2")
         getProfileImage()
-        getSkills()
-        getProjects()
+        getTableViews()
         print("Function 6.end")
     }
     
@@ -65,11 +64,31 @@ class ProfileViewController: UIViewController {
         emailLabel.text = userInformation!["email"].stringValue
     }
     
-    func getSkills() {
+    
+    func getTableViews() {
         skillsTableView.layer.cornerRadius = 10
+        projectsTableView.layer.cornerRadius = 10
+        
+        // get information for tableViews to display
     }
     
-    func getProjects() {
-        projectsTableView.layer.cornerRadius = 10
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tableView.tag == 1 {
+            return skillsInformation.count
+        } else {
+            return projectsInformation.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let referenceCell =  tableView.dequeueReusableCell(withIdentifier: "prototypeCell", for: indexPath)
+        
+        if tableView.tag == 1 {
+            referenceCell.textLabel?.text = skillsInformation[indexPath.row]
+            return referenceCell
+        } else {
+            referenceCell.textLabel?.text = projectsInformation[indexPath.row]
+            return referenceCell
+        }
     }
 }

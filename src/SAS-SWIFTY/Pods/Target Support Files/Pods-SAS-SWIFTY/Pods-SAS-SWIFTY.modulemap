@@ -1,6 +1,0 @@
-framework module Pods_SAS_SWIFTY {
-  umbrella header "Pods-SAS-SWIFTY-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -216,13 +216,27 @@
                                                                     <constraint firstAttribute="height" constant="2" id="GvP-97-ZCZ"/>
                                                                 </constraints>
                                                             </view>
-                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="htu-ek-ayl" userLabel="skillTableView">
+                                                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="htu-ek-ayl" userLabel="skillTableView">
                                                                 <rect key="frame" x="0.0" y="96" width="200" height="250"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="250" id="jds-MI-Iq9"/>
                                                                     <constraint firstAttribute="width" constant="200" id="kOM-7u-VID"/>
                                                                 </constraints>
+                                                                <prototypes>
+                                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="prototypeCell" id="WxX-rz-XZS">
+                                                                        <rect key="frame" x="0.0" y="30" width="200" height="44"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WxX-rz-XZS" id="nnP-ny-oh5">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
+                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                        </tableViewCellContentView>
+                                                                    </tableViewCell>
+                                                                </prototypes>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="D7X-0Z-ke1" id="cuJ-j3-sH8"/>
+                                                                    <outlet property="delegate" destination="D7X-0Z-ke1" id="lHS-Ir-Get"/>
+                                                                </connections>
                                                             </tableView>
                                                         </subviews>
                                                     </stackView>
@@ -243,13 +257,27 @@
                                                                     <constraint firstAttribute="width" constant="200" id="rxZ-V1-TbE"/>
                                                                 </constraints>
                                                             </view>
-                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="y0Y-b8-Get" userLabel="projectTableView">
+                                                            <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="y0Y-b8-Get" userLabel="projectTableView">
                                                                 <rect key="frame" x="0.0" y="108" width="200" height="250"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="250" id="aja-eo-Sa4"/>
                                                                     <constraint firstAttribute="width" constant="200" id="bA0-Q6-cbt"/>
                                                                 </constraints>
+                                                                <prototypes>
+                                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="prototypeCell" id="0oF-eD-Oi3">
+                                                                        <rect key="frame" x="0.0" y="30" width="200" height="44"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0oF-eD-Oi3" id="4UQ-2a-99I">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
+                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                        </tableViewCellContentView>
+                                                                    </tableViewCell>
+                                                                </prototypes>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="D7X-0Z-ke1" id="5H8-i0-yH6"/>
+                                                                    <outlet property="delegate" destination="D7X-0Z-ke1" id="nmb-qq-HO7"/>
+                                                                </connections>
                                                             </tableView>
                                                         </subviews>
                                                     </stackView>
@@ -299,7 +327,7 @@
                         <outlet property="locationLabel" destination="Me2-Y2-wZe" id="8tP-3E-PIt"/>
                         <outlet property="profileImage" destination="4PD-JN-YKW" id="gxo-Rg-rkx"/>
                         <outlet property="projectsTableView" destination="y0Y-b8-Get" id="gFe-TH-z1m"/>
-                        <outlet property="skillsTableView" destination="htu-ek-ayl" id="iNy-3W-a79"/>
+                        <outlet property="skillsTableView" destination="htu-ek-ayl" id="G01-OV-bCg"/>
                         <outlet property="usernameLabel" destination="Id4-z0-5Zz" id="vQQ-6U-jA6"/>
                     </connections>
                 </viewController>
