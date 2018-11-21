@@ -56,7 +56,7 @@ class Authenticate {
     func requestUser (username:String, completion: @escaping (JSON?) -> Void) {
         print("Function 4")
         let request = "https://api.intra.42.fr/v2/users/" + username + "?access_token=" + self.token
-        //print(request)
+        print(request)
         print("Function 4.1")
         Alamofire.request(request)
             .responseJSON { response in
