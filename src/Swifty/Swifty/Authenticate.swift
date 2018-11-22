@@ -61,7 +61,7 @@ class Authenticate {
         Alamofire.request(request)
             .responseJSON { response in
                 guard response.result.isSuccess else {
-                    print("Error-@@")
+                    print("Error: Request timed out. Please try again.")
                     return
                 }
                 print("Function 4.2")

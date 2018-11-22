@@ -29,8 +29,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     struct project {
         var name: String
-        var finalMark: Int
-        var validated: Bool
+        var finalMark: String
+        var validated: String
     }
     
     var userInformation: JSON?
@@ -81,7 +81,11 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         skillsTableView.layer.cornerRadius = 10
         
         for (_, json): (String, JSON) in userInformation!["cursus_users"][0]["skills"] {
-            let newArrayElement = skill(name: json["name"].stringValue, level: json["level"].stringValue)
+            let _name = json["name"].stringValue
+            
+            let _level = json["level"].stringValue
+            
+            let newArrayElement = skill(name: _name, level: _level)
             skills.append(newArrayElement)
         }
         //print("SKILLS: [", skills, "]")
@@ -91,7 +95,19 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         projectsTableView.layer.cornerRadius = 10
         
         for (_, json): (String, JSON) in userInformation!["projects_users"] {
-            let newArrayElement = project(name: json["project"]["slug"].stringValue, finalMark: json["final_mark"].intValue, validated: json["validated"].boolValue)
+            let _name = json["project"]["slug"].stringValue
+            
+            var _finalMark = json["final_mark"].stringValue
+            if (_finalMark == "") {
+                _finalMark = "WIP"
+            }
+            
+            var _validated = json["validated?"].stringValue
+            if (_validated == "") {
+                _validated = "false"
+            }
+            
+            let newArrayElement = project(name: _name, finalMark: _finalMark, validated: _validated)
             projects.append(newArrayElement)
         }
         //print("PROJECS: [", projects, "]")
@@ -109,10 +125,12 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         let referenceCell =  tableView.dequeueReusableCell(withIdentifier: "prototypeCell", for: indexPath)
         
         if tableView.tag == 1 {
-            referenceCell.textLabel?.text = skills[indexPath.row].name// + skills[indexPath.row].level
+            let label = "[" + skills[indexPath.row].level + "] " + skills[indexPath.row].name
+            referenceCell.textLabel?.text = label
             return referenceCell
         } else {
-            referenceCell.textLabel?.text = projects[indexPath.row].name// + projects[indexPath.row].finalMark
+            let label = "[" +  projects[indexPath.row].finalMark + "] " + "[" + String(projects[indexPath.row].validated) + "] " + projects[indexPath.row].name
+            referenceCell.textLabel?.text = label
             return referenceCell
         }
     }

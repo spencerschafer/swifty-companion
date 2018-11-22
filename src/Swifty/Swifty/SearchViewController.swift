@@ -35,7 +35,11 @@ class SearchViewController: UIViewController {
                     print("Function 5")
                     json = completion
                     print("Function 5.1")
+                    if ((json?.isEmpty)!) {
+                        print("User does not exist")
+                    } else {
                     self.performSegue(withIdentifier: "goButtonSegue", sender: self)
+                    }
                     print("Function 5.end")
                 } else {
                     print("Error in goButton")
