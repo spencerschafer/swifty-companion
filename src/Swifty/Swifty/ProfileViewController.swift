@@ -12,7 +12,7 @@ import SwiftyJSON
 
 
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var displayNameLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
@@ -24,17 +24,18 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     struct skill {
         var name: String
-        var level: Int
+        var level: String
     }
     
     struct project {
         var name: String
-        var level: Int
+        var finalMark: Int
+        var validated: Bool
     }
     
     var userInformation: JSON?
-    var skills: [String] = ["1"]
-    var projects: [String] = ["A"]
+    var skills: [skill] = []
+    var projects: [project] = []
     
     override func viewDidLoad() {
         print("Function 6")
@@ -79,19 +80,21 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     func getSkills() {
         skillsTableView.layer.cornerRadius = 10
         
-        for (_, value): (String, JSON) in userInformation!["cursus_users"][0]["skills"] {
-            print("Name: ", value["name"], "Level: ", value["level"])
+        for (_, json): (String, JSON) in userInformation!["cursus_users"][0]["skills"] {
+            let newArrayElement = skill(name: json["name"].stringValue, level: json["level"].stringValue)
+            skills.append(newArrayElement)
         }
+        //print("SKILLS: [", skills, "]")
     }
     
     func getProjects() {
         projectsTableView.layer.cornerRadius = 10
-        /*
-        // not quite correct yet
-        for (_, value): (String, JSON) in userInformation!["cursus_users"][0]["projects_users"] {
-            print("Name: ", value["name"], "Level: ", value["level"])
+        
+        for (_, json): (String, JSON) in userInformation!["projects_users"] {
+            let newArrayElement = project(name: json["project"]["slug"].stringValue, finalMark: json["final_mark"].intValue, validated: json["validated"].boolValue)
+            projects.append(newArrayElement)
         }
-         */
+        //print("PROJECS: [", projects, "]")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -106,10 +109,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         let referenceCell =  tableView.dequeueReusableCell(withIdentifier: "prototypeCell", for: indexPath)
         
         if tableView.tag == 1 {
-            referenceCell.textLabel?.text = skills[indexPath.row]
+            referenceCell.textLabel?.text = skills[indexPath.row].name// + skills[indexPath.row].level
             return referenceCell
         } else {
-            referenceCell.textLabel?.text = projects[indexPath.row]
+            referenceCell.textLabel?.text = projects[indexPath.row].name// + projects[indexPath.row].finalMark
             return referenceCell
         }
     }
